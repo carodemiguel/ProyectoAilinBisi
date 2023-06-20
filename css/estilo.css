@@ -741,9 +741,9 @@ main .cajaContacto .container .letraPisaBootstrap {
 
 @media screen and (max-width: 768px) {
   header .fotoPortada {
-    background-image: url(../img/AilinBisiOrigenCongresoTalleres.JPG);
-    height: 700px;
-    background-attachment: fixed;
+    background-image: url(../img/AilinBisiOrigenCongreso.JPG);
+    height: 400px;
+    background-attachment: local;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -753,6 +753,8 @@ main .cajaContacto .container .letraPisaBootstrap {
       display: flex;
       justify-content: space-between;
       height: 25%; }
+    header .fotoPortada .header2 {
+      margin-top: 100px; }
   main .sectionNuevoPost {
     display: grid;
     grid-template-columns: 1fr;
@@ -805,6 +807,7 @@ main .cajaContacto .container .letraPisaBootstrap {
 
 @media screen and (max-width: 480px) {
   header .fotoPortada {
+    background-image: url(../img/AilinBisiOrigenCongresoTalleres.JPG);
     height: 400px;
     background-attachment: local; }
     header .fotoPortada .header2 {
