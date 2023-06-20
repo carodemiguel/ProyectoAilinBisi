@@ -1,0 +1,316 @@
+header{   
+      
+         
+    .fotoPortada{
+        background-image: url(../img/AilinBisiOrigenCongreso.JPG);
+        height: 450px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0px;
+        margin: 0px; 
+        .header1{
+            display: flex;
+            justify-content: space-between;
+            height: 50%;
+            .redesSociales{
+                display: flex;
+                flex-direction: column;
+                align-items: center;  
+                position: fixed;
+                top: 0;
+                right: 0; 
+                .iconoInstagram{
+                    width: 30px; 
+                    border-radius: 50%;   
+                    margin: 5px;       
+                }
+                .iconoFacebook{
+                    width: 30px;
+                    border-radius: 50%;
+                    margin: 5px;
+                }
+                .iconoTwiter{
+                    width: 30px;
+                    border-radius: 50%;
+                    margin: 5px;
+                }
+                .iconoWhatsapp{
+                    width: 30px;
+                    border-radius: 50%;
+                    margin: 5px;
+                }  
+            }        
+        }
+        .header2{
+            display: flex;
+            flex-direction: column;
+            height: 50%;
+            text-align: center;
+            justify-content: flex-end;  
+            .BaseMenuMobile1{
+                width: 100%;
+                height: 100%;                
+                .ColumnaMenu1{
+                        list-style: none;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-end;
+                        li{
+                            background-color: $color-boton;
+                            border-radius: 30px;
+                            padding: 8px;
+                            margin: 10px;
+                            a{
+                                color: $color-bodyandNav;
+                                text-decoration: none;
+                                padding: .7rem;
+                                .linkNav{                                
+                                    font-family: "SofiaSans-Regular";                                
+                                    font-size: 1.3rem;
+                                    &:hover{
+                                        transform: translate(0.1px, 5px);
+                                        color: beige;
+                                    }
+                                    &:focus{
+                                        background-color:$color-bodyandNav;
+                                    }
+                                }   
+                            }
+                            
+                        }
+                        
+                }                 
+            }                        
+            .BaseMenuMobile2{
+                width: 100%;
+                height: 100%;
+                display: flex; 
+                flex-direction: row; 
+                justify-content: space-evenly;
+                align-items: center;  
+                .ColumnaMenu2{
+                    display: flex;
+                    ul{
+                        list-style: none;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        li{
+                            background-color: $color-boton;
+                            border-radius: 30px;
+                            padding: 8px;
+                            margin: 10px;
+                            a{
+                                color: $color-bodyandNav;
+                                text-decoration: none;
+                                padding: .7rem;
+                                .linkNav{                                
+                                    font-family: "SofiaSans-Regular";                                
+                                    font-size: 1.3rem;
+                                    &:hover{
+                                        transform: translate(0.1px, 5px);
+                                        color: beige;
+                                    }
+                                    &:focus{
+                                        background-color:$color-bodyandNav;
+                                    }
+                                }   
+                            }
+                            
+                        }
+                       
+                }     
+                }                          
+                           
+               
+            }  
+            .divSlogan{
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: row;
+                h2{
+                    font-size: 3rem;   
+                    color: white;  
+                    font-weight: bold;
+                }
+            }
+            .divCalltoaction{
+                display: flex;
+                justify-content: center;
+                border-radius: 5px;
+                align-items: flex-end;
+                flex-direction: row;
+                text-decoration: none;                
+                .calltoaction{
+                   @include boton ($color-boton)
+                } 
+            }                        
+        }       
+    }                              
+}
+main{
+    .cajaIntroduccion{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;    
+        margin: 20px;    
+        border-radius: 8px;
+        border: $color-cajas 5px groove;
+        h1{
+            text-align: left;
+            background-color: $color-cajas;
+        }
+        p{
+            width: 95%;
+        }
+        .divCalltoaction{
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            align-items: flex-end;
+            flex-direction: row;
+            text-decoration: none;
+            .calltoaction{
+                @include boton ($color-boton)
+            } 
+            .calltoactionSmall{
+                font-size: medium;
+            }
+        }                    
+    }
+    .sectionProximosCursos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
+        border-radius: 8px;  
+        border:  $color-cajas 5px groove;
+        .Subtitulo{
+            background-color:  $color-cajas;
+            h4{
+                text-align: start;    
+                color:black;
+            }
+        }
+        .cajaProximosCursos{
+            display: flex;
+            justify-content: space-around;
+            .proximoCurso{
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                .divCalltoaction{
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 5px;
+                    align-items: flex-end;
+                    flex-direction: row;
+                    text-decoration: none;
+                    .calltoaction{
+                        @include boton ($color-boton)
+                    } 
+                    .calltoactionSmall{
+                        font-size: medium;
+                    }
+                    .botonProximosCursos{
+                        margin: 20px;
+                    }
+                }     
+                
+            }
+                
+        }
+    }
+    .sectionReviews{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
+        border-radius: 8px;  
+        border:  $color-cajas 5px groove;        
+        color: #fecc01;
+        background-color: $color-cajas;        
+        .Subtitulo{            
+            h4{
+                text-align: start;  
+                color:  black;                
+                             
+            }
+        }
+        .cajaReviews{
+            display: flex;
+            justify-content: space-around;
+            background-color: $fondo-color-footer;            
+            .review{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }    
+    .sectionNuevoPost{
+        margin: 20px;     
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+        grid-template-areas: 
+        "titulo titulo"
+        "imagen texto"
+        "imagen cta";
+        background-color: $fondo-nuevoPost; 
+        .Subtitulo{
+            grid-area: titulo;
+            height: 50px; 
+            h4{
+                text-align: start;    
+                color: black;
+            }  
+        }
+        .cajaImagenPosteo{
+            grid-area: imagen;
+            padding: 10px;
+            .fotoPosteos{
+                border-radius: 8px;                   
+                width: 99%;
+                height: 99%;                           
+            }          
+        }
+        .cajaTextoPosteo{
+            grid-area: texto;
+            color: black; 
+            h5{
+                color: black; 
+                text-align: center; 
+                padding: 8px; 
+                font-size: 1.3rem; 
+                font-weight: bolder;
+            }           
+        } 
+        .divCalltoaction{
+            grid-area: cta;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            align-items: flex-end;
+            flex-direction: row;
+            text-decoration: none;
+            .calltoaction{
+                @include boton ($color-boton)
+            } 
+            .calltoactionSmall{
+                font-size: medium;
+            }           
+        }
+    }
+}

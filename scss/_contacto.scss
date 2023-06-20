@@ -1,0 +1,21 @@
+main{
+    .cajaContacto{
+        .container{
+            .letraPisaBootstrap{
+                font-family: "SofiaSans-Regular";
+                color: #090303;                
+                text-align: center;
+                padding: 20px;
+                .input{
+                    &:focus{
+                        transform: scale(1.1, 1.1); 
+                        border: rgb(249, 246, 246) 1px solid;
+                    }
+                }
+                .calltoaction{
+                    @include boton ($color-boton)
+                }                 
+            }
+        }        
+    }
+}

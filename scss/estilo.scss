@@ -1,0 +1,446 @@
+$color-cajas: #735d331b;
+$fondo-color-footer: #434343;
+$fondo-nuevoPost: #735d331b;
+$color-boton: #8B73FF;
+$color-bodyandNav: beige;
+
+@mixin boton ($colorboton){
+    background-color: $color-boton;
+    text-decoration: underline $color-boton;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 10px;
+    &:hover{
+        transform: scale(1.1, 1.1);
+        text-decoration-color: $color-boton;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{  
+    background-color: $color-bodyandNav;  
+    font-family: "SofiaSans-Light";
+    h1, h2, h3, h4, h5{
+        font-family: "SofiaSans-Regular";
+        color: rgb(9, 3, 3);
+        text-align: center;
+        padding: 20px;         
+    }
+    p{
+        font-size: 1.5rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 1.5;
+        padding: 15px;
+    }
+}
+footer{
+    background-color: $fondo-color-footer;
+    margin-bottom: 10px;
+    .logoAlPie{
+        margin-bottom: 40px;
+        padding: 20px; 
+        .logo{
+            width: 100px;
+            height: 100px;
+            border-radius: 5px; 
+        }              
+    }
+    .footerBottom{
+        .redesFooter{
+            display: flex;
+            
+            align-items: center;
+            
+            padding: 20px;
+            .iconoInstagram{
+                border: #8a8a8a 2px solid;
+                width: 30px;
+                border-radius: 50%;
+                margin: 5px;
+            }
+            .iconoFacebook{
+                border: #8a8a8a 2px solid;
+                width: 30px;
+                border-radius: 50%;
+                margin: 5px;
+            }
+            .iconoTwiter{
+                border: #8a8a8a 2px solid;
+                width: 30px;
+                border-radius: 50%;
+                margin: 5px;
+            }
+            .iconoWhatsapp{
+                border: #8a8a8a 2px solid;
+                width: 30px;
+                border-radius: 50%;
+                margin: 5px;
+            }
+        }
+    }
+    
+    h5{
+        color: white;
+    }   
+}
+@font-face {
+    font-family: "SofiaSans-Light";
+    src: url(../assets/fonts/SofiaSans-Light.ttf);
+}  
+@font-face {
+    font-family: "SofiaSans-Regular";
+    src: url(../assets/fonts/SofiaSans-Regular.ttf);
+}
+@import "index";
+@import "about";
+@import "blog";
+@import "animalflow";
+@import "nutricion";
+@import "kettlebells";            
+@import "contacto";  
+
+@media screen and (max-width: 768px){               
+    header{
+        .fotoPortada{
+            background-image: url(../img/AilinBisiOrigenCongresoTalleres.JPG);
+            height: 700px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0px;
+            margin: 0px; 
+            .header1{
+                display: flex;
+                justify-content: space-between;
+                height: 25%;
+                    
+            }
+                               
+        } 
+           
+    }
+    main{
+        .sectionNuevoPost{       
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 4fr 3fr 1fr;
+            grid-template-areas: 
+            "titulo"
+            "imagen"
+            "texto"
+            "cta";             
+            .Subtitulo{
+                grid-area: titulo;
+                height: 100px;                
+            }   
+            .cajaTextoPosteo{
+                grid-area: texto;            
+            } 
+            .cajaImagenPosteo{
+                 grid-area: imagen;
+                 .fotoPosteos{        
+                    display: inline-block;
+                    border-radius: 10px;
+                    height: 400px;
+                }
+            }
+            .divCalltoaction{
+                grid-area: cta;
+                display: flex;
+                align-items: flex-start;
+                padding: 10px;
+            }         
+        }
+        .sectionReviews{
+            .cajaReviews{
+                flex-direction: column;
+                .review{
+                    align-self: center;
+                }
+            }
+        }
+        .sectionProximosCursos{
+            .cajaProximosCursos{
+                flex-direction: column;
+                .proximoCurso{
+                    align-self: center;
+                }
+            }
+        }
+        .cajaBlog{                
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 3fr 0.20fr;
+                grid-template-areas: 
+                "imagen"
+                "titulo"
+                "texto"
+                "cta";                
+                .cajaImagenBlog{
+                    grid-area: imagen; 
+                    display: flex;                                                      
+                    .fotoPosteos{                        
+                        margin: auto;                        
+                        height: 400px; 
+                        display: inline-block;                       
+                }    
+                }
+                .cajaTituloYtextoBlog{
+                    grid-area: titulo;
+                 }
+                .cajaTextoBlog{
+                    grid-area: texto;
+                }
+                .divCalltoaction{
+                    grid-area: cta;                    
+                }     
+        }
+        
+        .container{
+            .mapa{                
+                margin: auto;
+                padding: 50px;
+            }            
+        }
+        
+    }
+}           
+@media screen and (max-width: 480px){
+    header{
+        .fotoPortada{
+            height: 400px;            
+            background-attachment: local;           
+            .header2{
+                margin-top: 100px;
+                .BaseMenuMobile1{
+                   
+                        .ColumnaMenu1{
+                            list-style: none;
+                            padding: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: flex-end;
+                            
+                            
+                            li{
+                                background-color: $color-boton;
+                                border-radius: 30px;
+                                padding: 0px;
+                                margin: 10px;
+                                a{
+                                    color: $color-bodyandNav;
+                                    text-decoration: none;
+                                    padding: .3rem;
+                                    .linkNav{                                
+                                        font-family: "SofiaSans-Regular";                                
+                                        font-size: 1rem;
+                                        &:hover{
+                                            transform: translate(0.1px, 5px);
+                                            color: beige;
+                                        }
+                                        &:focus{
+                                            background-color:$color-bodyandNav;
+                                        }
+                                    }   
+                                }
+                                
+                            }
+                            
+                    }               
+                }
+                .BaseMenuMobile2{
+                        flex-direction: column;                       
+                        
+                        .ColumnaMenu2{
+                            display: flex;
+                            margin: 0px;
+                            ul{
+                                list-style: none;
+                                padding: 0px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                li{
+                                    background-color: $color-boton;
+                                    border-radius: 30px;
+                                    padding: 0px;
+                                    margin: 10px;
+                                    a{
+                                        color: $color-bodyandNav;
+                                        text-decoration: none;
+                                        padding: .3rem;
+                                        .linkNav{                                
+                                            font-family: "SofiaSans-Regular";                                
+                                            font-size: 1rem;
+                                            &:hover{
+                                                transform: translate(0.1px, 5px);
+                                                color: beige;
+                                            }
+                                            &:focus{
+                                                background-color:$color-bodyandNav;
+                                            }
+                                        }   
+                                    }
+                                    
+                                }
+                               
+                        }     
+                        }  
+                }                 
+                .divSlogan{
+                        h2{
+                            font-size: 1.8rem;
+                        }
+                }
+                .divCalltoaction{
+                        .calltoaction{        
+                            text-decoration-color: $color-boton;
+                            font-size: medium;      
+                        } 
+                }                         
+                
+             }   
+               
+           
+        }
+        .fotoPortadaAbout{
+            height: 250px;            
+            background-attachment: local;
+            
+            .header2{
+                .divSlogan{
+                    h2{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+        .fotoPortadaScorpion{
+            height: 250px;            
+            background-attachment: local;
+            .header2{
+                .divSlogan{
+                    h2{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+        .fotoPortadaBlog{            
+            height: 250px;            
+            background-attachment: local;             
+            .header2{
+                .divSlogan{
+                    h2{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+        .fotoPortadaKettlebells{
+            height: 250px;            
+            background-attachment: local;            
+            .header2{
+                .divSlogan{
+                    h2{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+        .fotoPortadaNutricion{
+            height: 250px;            
+            background-attachment: local;                      
+            .header2{
+                .divSlogan{
+                    h2{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+     main{
+        .cajaBlog{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            .cajaTextoBlog{ 
+                p{  
+                    a{
+                        .overflowLinksExternos{
+                            text-overflow: hidden;
+                        }   
+                    }             
+                }                   
+            }                   
+            .cajaImagenBlog{                
+                .fotoPosteos{                        
+                    margin: 5px auto;                                  
+                    width: 100%;                                    
+                }    
+            }
+        }
+        .cajaCurso{
+            .reservarCurso{
+                .divCalltoaction{
+                    .calltoactionSmall{
+                        font-size: medium;
+                    }
+                }
+            }
+            .carousel{
+                width: 200px;
+                margin: 2px  auto;
+                padding: 0px;  
+            }
+        }
+        .cajaContacto{
+            .container{
+                .letraPisaBootstrap{
+                    .calltoaction{
+                        font-size: small;
+                    }
+                }
+            }
+        } 
+        .cajaProximosCursos{
+            .proximoCurso{
+                img{
+                    width: 250px;
+                }
+            }
+        } 
+        .sectionNuevoPost{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            .Subtitulo{
+                height: 100px;               
+                margin-bottom: 0px;
+            }
+            .cajaImagenPosteo{
+                height: 350px;                
+                margin-top: 0px;
+                margin-bottom: 0px;
+                .fotoPosteos{
+                    height: 300px;                
+                }
+            }
+            .cajaTextoPosteo{               
+                margin-top: 0px;
+            }
+        }
+    }                                     
+}                    
+                          
+                                               
+                
+     
+            
