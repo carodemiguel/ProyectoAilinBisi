@@ -23,11 +23,14 @@ $color-bodyandNav: beige;
 body{  
     background-color: $color-bodyandNav;  
     font-family: "SofiaSans-Light";
-    h1, h2, h3, h4, h5{
+    h1, h2, h4, h5{
         font-family: "SofiaSans-Regular";
         color: rgb(9, 3, 3);
         text-align: center;
         padding: 20px;         
+    }
+    h3{
+        color: $color-bodyandNav;
     }
     p{
         font-size: 1.5rem;
@@ -96,12 +99,9 @@ footer{
     src: url(../assets/fonts/SofiaSans-Regular.ttf);
 }
 @import "index";
-@import "about";
-@import "blog";
-@import "animalflow";
-@import "nutricion";
-@import "kettlebells";            
-@import "contacto";  
+
+@import "slowfashion";
+
 
 @media screen and (max-width: 768px){               
     header{
@@ -125,7 +125,26 @@ footer{
             }
                                
         } 
-           
+        .fotoPortadaSlowFashion{
+            background-image: url(../img/AilinBisiSlowShop.jpg);
+            height: 400px;
+            background-attachment: local;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0px;
+            margin: 0px; 
+            .header1{
+                display: flex;
+                justify-content: space-between;
+                height: 25%;
+                    
+            }
+            .header2{
+                margin-top: 100px;
+            }
+                               
+        }   
     }
     main{
         .sectionNuevoPost{       
@@ -277,6 +296,100 @@ footer{
                                     margin: 10px;
                                     a{
                                         color: $color-bodyandNav;
+                                        text-decoration: none;
+                                        padding: .3rem;
+                                        .linkNav{                                
+                                            font-family: "SofiaSans-Regular";                                
+                                            font-size: 1rem;
+                                            &:hover{
+                                                transform: translate(0.1px, 5px);
+                                                color: beige;
+                                            }
+                                            &:focus{
+                                                background-color:$color-bodyandNav;
+                                            }
+                                        }   
+                                    }
+                                    
+                                }
+                               
+                        }     
+                        }  
+                }                 
+                .divSlogan{
+                        h2{
+                            font-size: 1.8rem;
+                        }
+                }
+                .divCalltoaction{
+                        .calltoaction{        
+                            text-decoration-color: $color-boton;
+                            font-size: medium;      
+                        } 
+                }                         
+                
+             }   
+               
+           
+        }
+        .fotoPortadaSlowFashion{
+            background-image: url(../img/AilinBisiSlowShop2.jpg);
+            height: 400px;            
+            background-attachment: local;           
+            .header2{
+                margin-top: 100px;
+                .BaseMenuMobile1{
+                   
+                        .ColumnaMenu1{
+                            list-style: none;
+                            padding: 10px;
+                            display: flex;                            
+                            align-items: center;                         
+                                                        
+                            li{                                                        
+                               
+                                border-radius: 30px;
+                                padding: 0px;
+                                margin: 10px;
+                                a{
+                                    
+                                    text-decoration: none;
+                                    padding:  .3rem;
+                                    .linkNav{                                
+                                        font-family: "SofiaSans-Regular";                                
+                                        font-size: 1rem;
+                                        &:hover{
+                                            transform: translate(0.1px, 5px);
+                                            color: beige;
+                                        }
+                                        &:focus{
+                                            background-color:$color-bodyandNav;
+                                        }
+                                    }   
+                                }
+                                
+                            }
+                            
+                    }               
+                }
+                .BaseMenuMobile2{
+                        flex-direction: column;                       
+                        
+                        .ColumnaMenu2{
+                            display: flex;
+                            margin: 0px;
+                            ul{
+                                list-style: none;
+                                padding: 0px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                li{                                    
+                                    border-radius: 30px;
+                                    padding: 0px;
+                                    margin: 10px;
+                                    a{                                        
                                         text-decoration: none;
                                         padding: .3rem;
                                         .linkNav{                                

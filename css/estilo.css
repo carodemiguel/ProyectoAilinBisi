@@ -6,11 +6,13 @@
 body {
   background-color: beige;
   font-family: "SofiaSans-Light"; }
-  body h1, body h2, body h3, body h4, body h5 {
+  body h1, body h2, body h4, body h5 {
     font-family: "SofiaSans-Regular";
     color: #090303;
     text-align: center;
     padding: 20px; }
+  body h3 {
+    color: beige; }
   body p {
     font-size: 1.5rem;
     margin-top: 0px;
@@ -110,11 +112,11 @@ header .fotoPortada {
       height: 100%; }
       header .fotoPortada .header2 .BaseMenuMobile1 .ColumnaMenu1 {
         list-style: none;
-        padding: 10px;
+        padding: 1px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center; }
+        justify-content: space-around; }
         header .fotoPortada .header2 .BaseMenuMobile1 .ColumnaMenu1 li {
           background-color: #8B73FF;
           border-radius: 30px;
@@ -335,8 +337,8 @@ main .sectionNuevoPost {
     main .sectionNuevoPost .divCalltoaction .calltoactionSmall {
       font-size: medium; }
 
-header .fotoPortadaAbout {
-  background-image: url(../img/naturalflowmcTeam.jpg);
+header .fotoPortadaSlowFashion {
+  background-image: url(../img/AilinBisiSlowShop.jpg);
   height: 450px;
   background-attachment: fixed;
   background-position: center;
@@ -344,400 +346,124 @@ header .fotoPortadaAbout {
   background-size: cover;
   padding: 0px;
   margin: 0px; }
-  header .fotoPortadaAbout .header1 {
+  header .fotoPortadaSlowFashion .header1 {
     display: flex;
     justify-content: space-between;
     height: 50%; }
-    header .fotoPortadaAbout .header1 .redesSociales {
+    header .fotoPortadaSlowFashion .header1 .redesSociales {
       display: flex;
       flex-direction: column;
       align-items: center;
       position: fixed;
       top: 0;
       right: 0; }
-      header .fotoPortadaAbout .header1 .redesSociales .iconoInstagram {
+      header .fotoPortadaSlowFashion .header1 .redesSociales .iconoInstagram {
         width: 30px;
         border-radius: 50%;
         margin: 5px; }
-      header .fotoPortadaAbout .header1 .redesSociales .iconoFacebook {
+      header .fotoPortadaSlowFashion .header1 .redesSociales .iconoFacebook {
         width: 30px;
         border-radius: 50%;
         margin: 5px; }
-      header .fotoPortadaAbout .header1 .redesSociales .iconoTwiter {
+      header .fotoPortadaSlowFashion .header1 .redesSociales .iconoTwiter {
         width: 30px;
         border-radius: 50%;
         margin: 5px; }
-      header .fotoPortadaAbout .header1 .redesSociales .iconoWhatsapp {
+      header .fotoPortadaSlowFashion .header1 .redesSociales .iconoWhatsapp {
         width: 30px;
         border-radius: 50%;
         margin: 5px; }
-  header .fotoPortadaAbout .header2 {
+  header .fotoPortadaSlowFashion .header2 {
     display: flex;
     flex-direction: column;
     height: 50%;
     text-align: center;
     justify-content: flex-end; }
-    header .fotoPortadaAbout .header2 .divSlogan h2 {
-      font-size: 3rem;
-      color: white;
-      font-weight: bold; }
-
-main .mainAbout {
-  display: flex;
-  flex-direction: column; }
-  main .mainAbout .cajaTextoAbout {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 20px;
-    border-radius: 8px;
-    border: #735d331b 5px groove; }
-    main .mainAbout .cajaTextoAbout h1 {
-      text-align: left;
-      background-color: #735d331b; }
-    main .mainAbout .cajaTextoAbout p {
-      width: 95%; }
-  main .mainAbout .divCalltoaction {
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    align-items: flex-end;
-    flex-direction: row;
-    text-decoration: none; }
-    main .mainAbout .divCalltoaction .calltoaction {
-      background-color: #8B73FF;
-      text-decoration: underline #8B73FF;
-      border-radius: 30px;
-      padding: 20px;
-      margin-bottom: 10px; }
-      main .mainAbout .divCalltoaction .calltoaction:hover {
-        transform: scale(1.1, 1.1);
-        text-decoration-color: #8B73FF; }
-
-header .fotoPortadaBlog {
-  background-image: url(../img/blogSaludDeporte.JPG);
-  height: 450px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0px;
-  margin: 0px; }
-  header .fotoPortadaBlog .header1 {
-    display: flex;
-    justify-content: space-between;
-    height: 50%; }
-    header .fotoPortadaBlog .header1 .redesSociales {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      right: 0; }
-      header .fotoPortadaBlog .header1 .redesSociales .iconoInstagram {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-      header .fotoPortadaBlog .header1 .redesSociales .iconoFacebook {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-      header .fotoPortadaBlog .header1 .redesSociales .iconoTwiter {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-      header .fotoPortadaBlog .header1 .redesSociales .iconoWhatsapp {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-  header .fotoPortadaBlog .header2 {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    text-align: center;
-    justify-content: flex-end; }
-    header .fotoPortadaBlog .header2 .divSlogan h2 {
-      font-size: 3rem;
-      color: white;
-      font-weight: bold; }
-
-main h1 {
-  text-align: left;
-  background-color: #735d331b; }
-
-main .cajaBlog {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 3fr 0.20fr;
-  grid-template-areas: "imagen titulo" "texto texto" "cta cta";
-  margin: 20px;
-  background-color: #735d331b; }
-  main .cajaBlog .cajaImagenBlog {
-    grid-area: imagen; }
-    main .cajaBlog .cajaImagenBlog .fotoPosteos {
+    header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 {
       width: 100%;
-      border-radius: 8px; }
-  main .cajaBlog .cajaTituloYtextoBlog {
-    grid-area: titulo; }
-  main .cajaBlog .cajaTextoBlog {
-    grid-area: texto; }
-  main .cajaBlog .divCalltoaction {
-    grid-area: cta;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    align-items: flex-start;
-    flex-direction: row;
-    text-decoration: none; }
-    main .cajaBlog .divCalltoaction .calltoaction {
-      background-color: #8B73FF;
-      text-decoration: underline #8B73FF;
-      border-radius: 30px;
-      padding: 20px;
-      margin-bottom: 10px; }
-      main .cajaBlog .divCalltoaction .calltoaction:hover {
-        transform: scale(1.1, 1.1);
-        text-decoration-color: #8B73FF; }
-
-header .fotoPortadaScorpion {
-  background-image: url(../img/fotoCursoAnimal.jpg);
-  height: 450px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0px;
-  margin: 0px; }
-  header .fotoPortadaScorpion .header1 {
-    display: flex;
-    justify-content: space-between;
-    height: 50%; }
-    header .fotoPortadaScorpion .header1 .redesSociales {
+      height: 100%; }
+      header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 {
+        list-style: none;
+        padding: 1px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around; }
+        header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 li {
+          background-color: rgba(245, 245, 220, 0.495);
+          border-radius: 30px;
+          padding: 8px;
+          margin: 10px; }
+          header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 li a {
+            color: #8B73FF;
+            text-decoration: none;
+            padding: .7rem; }
+            header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 li a .linkNav {
+              font-family: "SofiaSans-Regular";
+              font-size: 1.3rem; }
+              header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 li a .linkNav:hover {
+                transform: translate(0.1px, 5px);
+                color: beige; }
+              header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 li a .linkNav:focus {
+                background-color: beige; }
+    header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 {
+      width: 100%;
+      height: 100%;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      right: 0; }
-      header .fotoPortadaScorpion .header1 .redesSociales .iconoInstagram {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-      header .fotoPortadaScorpion .header1 .redesSociales .iconoFacebook {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-      header .fotoPortadaScorpion .header1 .redesSociales .iconoTwiter {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-      header .fotoPortadaScorpion .header1 .redesSociales .iconoWhatsapp {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-  header .fotoPortadaScorpion .header2 {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    text-align: center;
-    justify-content: flex-end; }
-    header .fotoPortadaScorpion .header2 .divSlogan h2 {
-      font-size: 3rem;
-      color: white;
-      font-weight: bold; }
-
-main .cajaCurso {
-  display: flex;
-  flex-direction: column; }
-  main .cajaCurso .cajaTablaCursos .tablaFechasCursos {
-    margin: 20px auto;
-    width: 90%; }
-  main .cajaCurso .reservarCurso .divCalltoaction {
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    align-items: flex-end;
-    flex-direction: row;
-    text-decoration: none; }
-    main .cajaCurso .reservarCurso .divCalltoaction .calltoaction {
-      background-color: #8B73FF;
-      text-decoration: underline #8B73FF;
-      border-radius: 30px;
-      padding: 20px;
-      margin-bottom: 10px; }
-      main .cajaCurso .reservarCurso .divCalltoaction .calltoaction:hover {
-        transform: scale(1.1, 1.1);
-        text-decoration-color: #8B73FF; }
-  main .cajaCurso .carousel {
-    width: 400px;
-    margin: 20px  auto;
-    padding: 0px; }
-
-header .fotoPortadaNutricion {
-  background-image: url(../img/cursoNutricion.jpg);
-  height: 450px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0px;
-  margin: 0px; }
-  header .fotoPortadaNutricion .header1 {
-    display: flex;
-    justify-content: space-between;
-    height: 50%; }
-    header .fotoPortadaNutricion .header1 .redesSociales {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center; }
+      header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 {
+        display: flex; }
+        header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul {
+          list-style: none;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul li {
+            background-color: rgba(245, 245, 220, 0.495);
+            border-radius: 30px;
+            padding: 8px;
+            margin: 10px; }
+            header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul li a {
+              color: #8B73FF;
+              text-decoration: none;
+              padding: .7rem; }
+              header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul li a .linkNav {
+                font-family: "SofiaSans-Regular";
+                font-size: 1.3rem; }
+                header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul li a .linkNav:hover {
+                  transform: translate(0.1px, 5px);
+                  color: beige; }
+                header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul li a .linkNav:focus {
+                  background-color: beige; }
+    header .fotoPortadaSlowFashion .header2 .divSlogan {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      right: 0; }
-      header .fotoPortadaNutricion .header1 .redesSociales .iconoInstagram {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-      header .fotoPortadaNutricion .header1 .redesSociales .iconoFacebook {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-      header .fotoPortadaNutricion .header1 .redesSociales .iconoTwiter {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-      header .fotoPortadaNutricion .header1 .redesSociales .iconoWhatsapp {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-  header .fotoPortadaNutricion .header2 {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    text-align: center;
-    justify-content: flex-end; }
-    header .fotoPortadaNutricion .header2 .divSlogan h2 {
-      font-size: 3rem;
-      color: white;
-      font-weight: bold; }
-
-main .cajaCurso {
-  display: flex;
-  flex-direction: column; }
-  main .cajaCurso .cajaTablaCursos .tablaFechasCursos {
-    margin: 20px auto;
-    width: 90%; }
-  main .cajaCurso .reservarCurso .divCalltoaction {
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    align-items: flex-end;
-    flex-direction: row;
-    text-decoration: none; }
-    main .cajaCurso .reservarCurso .divCalltoaction .calltoaction {
-      background-color: #8B73FF;
-      text-decoration: underline #8B73FF;
-      border-radius: 30px;
-      padding: 20px;
-      margin-bottom: 10px; }
-      main .cajaCurso .reservarCurso .divCalltoaction .calltoaction:hover {
-        transform: scale(1.1, 1.1);
-        text-decoration-color: #8B73FF; }
-  main .cajaCurso .carousel {
-    width: 400px;
-    margin: 20px  auto;
-    padding: 0px; }
-
-header .fotoPortadaKettlebells {
-  background-image: url(../img/cursoKettlebells.jpg);
-  height: 450px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0px;
-  margin: 0px; }
-  header .fotoPortadaKettlebells .header1 {
-    display: flex;
-    justify-content: space-between;
-    height: 50%; }
-    header .fotoPortadaKettlebells .header1 .redesSociales {
+      justify-content: center;
+      align-items: flex-end;
+      flex-direction: row; }
+      header .fotoPortadaSlowFashion .header2 .divSlogan h2 {
+        font-size: 3rem;
+        color: white;
+        font-weight: bold; }
+    header .fotoPortadaSlowFashion .header2 .divCalltoaction {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      right: 0; }
-      header .fotoPortadaKettlebells .header1 .redesSociales .iconoInstagram {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-      header .fotoPortadaKettlebells .header1 .redesSociales .iconoFacebook {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-      header .fotoPortadaKettlebells .header1 .redesSociales .iconoTwiter {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-      header .fotoPortadaKettlebells .header1 .redesSociales .iconoWhatsapp {
-        width: 30px;
-        border-radius: 50%;
-        margin: 5px; }
-  header .fotoPortadaKettlebells .header2 {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    text-align: center;
-    justify-content: flex-end; }
-    header .fotoPortadaKettlebells .header2 .divSlogan h2 {
-      font-size: 3rem;
-      color: white;
-      font-weight: bold; }
-
-main .cajaCurso {
-  display: flex;
-  flex-direction: column; }
-  main .cajaCurso .cajaTablaCursos .tablaFechasCursos {
-    margin: 20px auto;
-    width: 90%; }
-  main .cajaCurso .reservarCurso .divCalltoaction {
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    align-items: flex-end;
-    flex-direction: row;
-    text-decoration: none; }
-    main .cajaCurso .reservarCurso .divCalltoaction .calltoaction {
-      background-color: #8B73FF;
-      text-decoration: underline #8B73FF;
-      border-radius: 30px;
-      padding: 20px;
-      margin-bottom: 10px; }
-      main .cajaCurso .reservarCurso .divCalltoaction .calltoaction:hover {
-        transform: scale(1.1, 1.1);
-        text-decoration-color: #8B73FF; }
-  main .cajaCurso .carousel {
-    width: 400px;
-    margin: 20px  auto;
-    padding: 0px; }
-
-main .cajaContacto .container .letraPisaBootstrap {
-  font-family: "SofiaSans-Regular";
-  color: #090303;
-  text-align: center;
-  padding: 20px; }
-  main .cajaContacto .container .letraPisaBootstrap .input:focus {
-    transform: scale(1.1, 1.1);
-    border: #f9f6f6 1px solid; }
-  main .cajaContacto .container .letraPisaBootstrap .calltoaction {
-    background-color: #8B73FF;
-    text-decoration: underline #8B73FF;
-    border-radius: 30px;
-    padding: 20px;
-    margin-bottom: 10px; }
-    main .cajaContacto .container .letraPisaBootstrap .calltoaction:hover {
-      transform: scale(1.1, 1.1);
-      text-decoration-color: #8B73FF; }
+      justify-content: center;
+      border-radius: 5px;
+      align-items: flex-end;
+      flex-direction: row;
+      text-decoration: none; }
+      header .fotoPortadaSlowFashion .header2 .divCalltoaction .calltoaction {
+        background-color: #8B73FF;
+        text-decoration: underline #8B73FF;
+        border-radius: 30px;
+        padding: 20px;
+        margin-bottom: 10px; }
+        header .fotoPortadaSlowFashion .header2 .divCalltoaction .calltoaction:hover {
+          transform: scale(1.1, 1.1);
+          text-decoration-color: #8B73FF; }
 
 @media screen and (max-width: 768px) {
   header .fotoPortada {
@@ -754,6 +480,21 @@ main .cajaContacto .container .letraPisaBootstrap {
       justify-content: space-between;
       height: 25%; }
     header .fotoPortada .header2 {
+      margin-top: 100px; }
+  header .fotoPortadaSlowFashion {
+    background-image: url(../img/AilinBisiSlowShop.jpg);
+    height: 400px;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px; }
+    header .fotoPortadaSlowFashion .header1 {
+      display: flex;
+      justify-content: space-between;
+      height: 25%; }
+    header .fotoPortadaSlowFashion .header2 {
       margin-top: 100px; }
   main .sectionNuevoPost {
     display: grid;
@@ -866,6 +607,64 @@ main .cajaContacto .container .letraPisaBootstrap {
       header .fotoPortada .header2 .divSlogan h2 {
         font-size: 1.8rem; }
       header .fotoPortada .header2 .divCalltoaction .calltoaction {
+        text-decoration-color: #8B73FF;
+        font-size: medium; }
+  header .fotoPortadaSlowFashion {
+    background-image: url(../img/AilinBisiSlowShop2.jpg);
+    height: 400px;
+    background-attachment: local; }
+    header .fotoPortadaSlowFashion .header2 {
+      margin-top: 100px; }
+      header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 {
+        list-style: none;
+        padding: 10px;
+        display: flex;
+        align-items: center; }
+        header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 li {
+          border-radius: 30px;
+          padding: 0px;
+          margin: 10px; }
+          header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 li a {
+            text-decoration: none;
+            padding: .3rem; }
+            header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 li a .linkNav {
+              font-family: "SofiaSans-Regular";
+              font-size: 1rem; }
+              header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 li a .linkNav:hover {
+                transform: translate(0.1px, 5px);
+                color: beige; }
+              header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 li a .linkNav:focus {
+                background-color: beige; }
+      header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 {
+        flex-direction: column; }
+        header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 {
+          display: flex;
+          margin: 0px; }
+          header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul {
+            list-style: none;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; }
+            header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul li {
+              border-radius: 30px;
+              padding: 0px;
+              margin: 10px; }
+              header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul li a {
+                text-decoration: none;
+                padding: .3rem; }
+                header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul li a .linkNav {
+                  font-family: "SofiaSans-Regular";
+                  font-size: 1rem; }
+                  header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul li a .linkNav:hover {
+                    transform: translate(0.1px, 5px);
+                    color: beige; }
+                  header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul li a .linkNav:focus {
+                    background-color: beige; }
+      header .fotoPortadaSlowFashion .header2 .divSlogan h2 {
+        font-size: 1.8rem; }
+      header .fotoPortadaSlowFashion .header2 .divCalltoaction .calltoaction {
         text-decoration-color: #8B73FF;
         font-size: medium; }
   header .fotoPortadaAbout {
