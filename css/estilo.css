@@ -121,7 +121,8 @@ header .fotoPortada {
           background-color: #8B73FF;
           border-radius: 30px;
           padding: 8px;
-          margin: 10px; }
+          margin: 10px;
+          width: 180px; }
           header .fotoPortada .header2 .BaseMenuMobile1 .ColumnaMenu1 li a {
             color: beige;
             text-decoration: none;
@@ -154,7 +155,8 @@ header .fotoPortada {
             background-color: #8B73FF;
             border-radius: 30px;
             padding: 8px;
-            margin: 10px; }
+            margin: 10px;
+            width: 180px; }
             header .fotoPortada .header2 .BaseMenuMobile2 .ColumnaMenu2 ul li a {
               color: beige;
               text-decoration: none;
@@ -393,7 +395,8 @@ header .fotoPortadaSlowFashion {
           background-color: rgba(245, 245, 220, 0.495);
           border-radius: 30px;
           padding: 8px;
-          margin: 10px; }
+          margin: 10px;
+          width: 180px; }
           header .fotoPortadaSlowFashion .header2 .BaseMenuMobile1 .ColumnaMenu1 li a {
             color: black;
             text-decoration: none;
@@ -426,7 +429,8 @@ header .fotoPortadaSlowFashion {
             background-color: rgba(245, 245, 220, 0.495);
             border-radius: 30px;
             padding: 8px;
-            margin: 10px; }
+            margin: 10px;
+            width: 180px; }
             header .fotoPortadaSlowFashion .header2 .BaseMenuMobile2 .ColumnaMenu2 ul li a {
               color: black;
               text-decoration: none;
